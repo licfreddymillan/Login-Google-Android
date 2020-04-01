@@ -1,52 +1,52 @@
-
 <ion-content>
-  <ion-card *ngIf="!mostrar">
-    <img src="assets/img/imagenpulso2.jpg" />
-    <ion-card-header>
-      <ion-card-title>Pulso Radial</ion-card-title>
-    </ion-card-header>
-    <ion-card-content class="ion-text-justify">
-      1.-Flexiona el codo con el brazo al costado y la palma de la hacia arriba.
-      <div></div>
-      2.-La arteria radial esta situada en la cara interior de la muñeca.cerca de la base del pulgar.
-      <div></div>
-      3.-Colocar los dedos índices y corazón suavemente hasta sentir la arteria radial.
-    </ion-card-content>
-  </ion-card>
+    <ion-card *ngIf="!mostrar">
+        <img src="assets/img/imagenpulso2.jpg" />
+        <ion-card-header>
+            <ion-card-title>Pulso Radial</ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="ion-text-justify">
+            1.-Flexiona el codo con el brazo al costado y la palma de la hacia arriba.
+            <div></div>
+            2.-La arteria radial esta situada en la cara interior de la muñeca.cerca de la base del pulgar.
+            <div></div>
+            3.-Colocar los dedos índices y corazón suavemente hasta sentir la arteria radial.
+        </ion-card-content>
+    </ion-card>
 
-  <ion-card *ngIf="mostrar">
-    <img src="assets/img/imagenpulso1.jpg" />
-    <ion-card-header>
-      <ion-card-title>Pulso Carotídeo</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Colocar los dedos indices y corazón suavemente hasta sentir la arteria carotída de cualquier de los dos lados del cuello, en el espacio situado entre la tráquea y el musculo esternacleidomastoide(derecho o izquierdo), bajo
-      la mandibula.
-    </ion-card-content>
-  </ion-card>
+    <ion-card *ngIf="mostrar">
+        <img src="assets/img/imagenpulso1.jpg" />
+        <ion-card-header>
+            <ion-card-title>Pulso Carotídeo</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            Colocar los dedos indices y corazón suavemente hasta sentir la arteria carotída de cualquier de los dos lados del cuello, en el espacio situado entre la tráquea y el musculo esternacleidomastoide(derecho o izquierdo), bajo la mandibula.
+        </ion-card-content>
+    </ion-card>
 
-  <div class="ion-padding">
-    Contar los latidos por 10 segundo, una vez hecho esto multiplicarlo por seis, <b>esto te dará tus latidos 
-      por minutos.</b> 
-  </div>
+    <div class="ion-padding">
+        Contar los latidos por 10 segundo <b>y nosotros cálcularemos tus Latidos
+      por minutos.</b>
+    </div>
 
-  <ion-list lines="full" class="ion-padding ion-margin-bottom">
-    <ion-item>
-      <ion-label position="floating">Frecuencia cardiaca <ion-text color="danger">*</ion-text></ion-label>
-      <ion-input  type="number" inputmode="numeric" (ionInput)="valor($event)" ></ion-input>
-    </ion-item>
-  </ion-list>
+    <ion-list lines="full" class="ion-padding ion-margin-bottom">
+        <ion-item>
+            <ion-label position="floating">Frecuencia cardiaca
+                <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input type="number" inputmode="numeric" (ionInput)="valor($event)"></ion-input>
+        </ion-item>
+    </ion-list>
 
 
 </ion-content>
 
 
 <ion-footer class="contenedor">
-  <ion-toolbar  (click)="salir()">
-    <ion-buttons slot="end" >
-      <ion-button id="changeText" >
-        <ion-icon name="arrow-forward-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
+    <ion-toolbar (click)="salir()">
+        <ion-buttons slot="end">
+            <ion-button id="changeText">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-footer>

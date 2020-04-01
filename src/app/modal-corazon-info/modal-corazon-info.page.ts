@@ -24,8 +24,8 @@ export class ModalCorazonInfoPage implements OnInit {
   }
 
   valor(valor){
-    if(valor.target.value > 10 && valor.target.value <= 100  ) {
-      this.heart_rate = valor.target.value 
+    if(valor.target.value > 1 && valor.target.value <= 25  ) {
+      this.heart_rate = valor.target.value * 6;
       this.escapar = true
     }else{
       this.escapar = false
